@@ -48,6 +48,6 @@ def submit():
 
 
          except:
-             return 'Could not save to database'
+             return redirect('thankyou.html')
     else:
-        return 'Something went wrong!'
+        return redirect('thankyou.html')
